@@ -1,18 +1,39 @@
 <html>
 <head>
     <link rel="stylesheet" href="inputStyles.css">
-    <title>Add Recipe</title>
+    <div class="column" id="title">
+        <title>Add Recipe</title>
+        <h1>Add New Recipe</h1>
+        <label style="font-size: 16pt">Recipe Name:</label>
+        <br>
+        <input name="recipe" id="recipe"/>
+    </div>
+
+    <input type="button" class="button" id="more_fields" onclick="addRow();" value="Add Ingredients" align="center"/>
+
 </head>
 <body>
 <form id="addRecipe" name="addRecipe" method="post" action="/addRecipeResult.class.php">
-    <h1>Add New Recipe Below</h1>
-    <div class="column">
-        <label>Recipe Name:</label>
-        <br>
-        <input name="recipe" id="recipe"/>
-        <br><br>
-        <input type="button" class="button" id="more_fields" onclick="addFields();" value="Add Ingredients" />
-    </div>
+
+    <table id="ingredientTable">
+        <tr id="firstRow">
+            <th>Ingredient</th>
+            <th>Quantity</th>
+            <th>Measure</th>
+        </tr>
+        <tr id="emptyFields">
+            <td id="tdSTD">
+                <input name="ingredientTD" id="ingredientTD">
+            </td>
+            <td>
+                <input name="qtyTD" id="qtyTD">
+            </td>
+            <td>
+                <input name="measureTD" id="measureTD">
+            </td>
+        </tr>
+    </table>
+
     <div class="column" id="ingredientID">
         <label>Ingredient: </label>
         <br>
@@ -65,6 +86,32 @@
         measure.id = "measure";
         measureDiv.appendChild(measure);
         measureDiv.appendChild(document.createElement("br"));
+
+    }
+</script>
+
+<script type='text/javascript'>
+    function addRow() {
+
+        var ingredientTable = document.getElementById("ingredientTable");
+        var newTableRow = document.createElement('tr');
+        var newTD = document.createElement('td');
+        var input = document.createElement('input');
+        input.type = "text";
+        newTD.appendChild(input);
+        var newTD2 = document.createElement('td');
+        var input2 = document.createElement('input');
+        input2.type = "text";
+        newTD2.appendChild(input2);
+        var newTD3 = document.createElement('td');
+        var input3 = document.createElement('input');
+        input3.type = "text";
+        newTD3.appendChild(input3);
+
+        newTableRow.appendChild(newTD);
+        newTableRow.appendChild(newTD2);
+        newTableRow.appendChild(newTD3);
+        ingredientTable.appendChild(newTableRow);
 
     }
 </script>

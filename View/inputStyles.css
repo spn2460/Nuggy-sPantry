@@ -10,12 +10,23 @@ p {
     margin-left: 5%;
 
 }
-.column {
-    float: left;
-    width: 20%;
+
+#title {
+    text-align: center;
 }
-.button {
-    background-color: blue;
+
+#recipe {
+    font-size: 14pt;
+    height: 42px;
+    width: 400px;
+}
+
+table, td {
+    border: 1px solid black;
+}
+
+#more_fields {
+    background-color: green;
     border: none;
     color: white;
     padding: 15px 32px;
@@ -24,11 +35,11 @@ p {
     display: inline-block;
     font-size: 12px;
     margin: 4px 2px;
-    cursor: pointer;
+    cursor: crosshair;
 }
 
-submit {
-    background-color: blue;
+#submit {
+    background-color: red;
     border: none;
     color: white;
     padding: 15px 32px;
