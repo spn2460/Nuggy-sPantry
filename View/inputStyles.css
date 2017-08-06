@@ -1,0 +1,41 @@
+body {
+    background-color: powderblue;
+}
+h1 {
+    color: blue;
+    text-align: center;
+}
+p {
+    color: red;
+    margin-left: 5%;
+
+}
+.column {
+    float: left;
+    width: 20%;
+}
+.button {
+    background-color: blue;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+submit {
+    background-color: blue;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
