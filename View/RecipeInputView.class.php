@@ -4,20 +4,20 @@
         <title>Add Recipe</title>
         <link rel="stylesheet" href="inputStyles.css">
     </head>
-    <form id="addRecipe" name="addRecipe" method="post" action="/addRecipeResult.class.php">
+    <form id="addRecipe" name="addRecipe" method="post" action="AddRecipeResultView.class.php/">
 
-    <body>
+
         <div align="center">
             <h1>Add New Recipe</h1>
             <label style="font-size: 16pt" >Recipe Name:</label>
             <br>
-            <input name="recipe" id="recipeInput">
+            <input title=recipeInput" name="recipe" id="recipeInput">
             <br><br>
             <label style="font-size: 16pt">Recipe Location:</label>
             <br>
             <input name="location" id="locationInput" placeholder="URL or other location info">
         </div>
-    </body>
+
         <div align="center" style="width: 100%">
             <div class="column" style="width: 20%; float: left;">
                 <input type="button" class="button" id="more_fields" onclick="addRow();" value="Add Ingredients" align="right">
@@ -32,13 +32,13 @@
                     </tr>
                     <tr>
                         <td>
-                            <input name="ingredientTD" id="ingredientInput">
+                            <input title="ingredientCell" name="ingredientTD" id="ingredientInput">
                         </td>
                         <td>
-                            <input name="qtyTD" id="qtyInput">
+                            <input title="qtyCell" name="qtyTD" id="qtyInput">
                         </td>
                         <td>
-                            <input name="measureTD" id="measureInput">
+                            <input title="measureCell" name="measureTD" id="measureInput">
                         </td>
                     </tr>
                 </table>
