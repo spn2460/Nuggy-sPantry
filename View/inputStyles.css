@@ -15,14 +15,41 @@ p {
     text-align: center;
 }
 
-#recipe {
+#recipeInput {
+    text-align: center;
     font-size: 14pt;
-    height: 42px;
     width: 400px;
+}
+
+#locationInput {
+    font-size: 12pt;
+    width: 600px;
+}
+
+input {
+    font-size: 12pt;
 }
 
 table, td {
     border: 1px solid black;
+    margin: 40px 25px 40px 25px;
+}
+
+th {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#ingredientInput {
+    width: 400px;
+}
+
+#qtyInput {
+    width: 100px;
+}
+
+#measureInput {
+    width: 150px;
 }
 
 #more_fields {
@@ -33,9 +60,8 @@ table, td {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 12px;
-    margin: 4px 2px;
-    cursor: crosshair;
+    margin: 40px 0 25px 25px;
+    cursor: pointer;
 }
 
 #submit {
@@ -46,7 +72,7 @@ table, td {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 12px;
-    margin: 4px 2px;
+    float: left;
+    margin: 40px 25px 25px 40px;
     cursor: pointer;
 }
